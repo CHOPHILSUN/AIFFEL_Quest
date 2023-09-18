@@ -49,23 +49,23 @@
 
    - 2gram의 빈도를 Counter함수를 이용해서 간단하게 잘 작성했습니다.
     
-    ```python
-    data = Counter(data)    # Counter 함수를 이용해 각 요소가 몇 번씩 나오는지 센다.
-    ```
-    - 다음은 위의 코드를 지난 시간에 배운 setdefault, update 함수를 이용해서 작성한 예입니다.
+   ```python
+   data = Counter(data)    # Counter 함수를 이용해 각 요소가 몇 번씩 나오는지 센다.
+   ```
+   - 다음은 위의 코드를 지난 시간에 배운 setdefault, update 함수를 이용해서 작성한 예입니다.
     
-    ```python
-    # None이면 1, 아니면 value + 1을 return
-    def increment(value):
-        return 1 if value is None else value + 1
+   ```python
+   # None이면 1, 아니면 value + 1을 return
+   def increment(value):
+       return 1 if value is None else value + 1
 
-    # ngram별 빈도 계산
-    ngram_freq = {}
-    for ngram in ngrams:
-        # ngram을 빈도를 읽어서 1증가. 없으면 1
-        new_freq = increment(ngram_freq.setdefault(ngram)) 
-        # ngram의 빈도 업데이트
-        ngram_freq.update({ngram: new_freq})
-    ```
+   # ngram별 빈도 계산
+   ngram_freq = {}
+   for ngram in ngrams:
+       # ngram을 빈도를 읽어서 1증가. 없으면 1
+       new_freq = increment(ngram_freq.setdefault(ngram)) 
+       # ngram의 빈도 업데이트
+       ngram_freq.update({ngram: new_freq})
+   ```
 
 # 참고 링크 및 코드 개선
