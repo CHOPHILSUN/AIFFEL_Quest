@@ -47,10 +47,12 @@
 
 # 예시
     - 2gram의 빈도를 Counter함수를 이용해서 간단하게 잘 작성했습니다.
-    ```
+    
+    ```python
     data = Counter(data)    # Counter 함수를 이용해 각 요소가 몇 번씩 나오는지 센다.
     ```
     - 다음은 위의 코드를 지난 시간에 배운 setdefault, update 함수를 이용해서 작성한 예입니다.
+    
     ```python
     # None이면 1, 아니면 value + 1을 return
     def increment(value):
