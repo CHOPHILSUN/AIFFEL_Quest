@@ -46,7 +46,8 @@
     ```
 
 # 예시
-    - 2gram의 빈도를 Counter함수를 이용해서 간단하게 잘 작성했습니다.
+
+   - 2gram의 빈도를 Counter함수를 이용해서 간단하게 잘 작성했습니다.
     
     ```python
     data = Counter(data)    # Counter 함수를 이용해 각 요소가 몇 번씩 나오는지 센다.
